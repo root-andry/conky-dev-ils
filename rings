@@ -1,0 +1,58 @@
+background yes
+double_buffer yes
+
+alignment top_right
+
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+
+gap_x 20
+gap_y 5
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_colour 000000
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+minimum_size 300 500
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+
+show_graph_scale no
+show_graph_range no
+
+use_xft yes
+xftalpha 0.1
+xftfont Droid Sans:size=9
+color0 white
+color1 white
+color2 white
+color3 white
+
+
+TEXT
+${goto 12}+-------------------------------------------------------------------------
+${goto 12}|${alignr 50} +------------------------------------ CPU    ${cpu cpu} % ${image /home/andry/.conky/devils/image/Chip1.png -p 280,10 -s 25x25}
+${goto 12}|${voffset 45}${alignr 50}+-------------------- Temperature :    ${acpitemp } °C ${image /home/andry/.conky/devils/image/thero1.png -p 280,70 -s 25x25}
+${goto 12}|${voffset 45}${alignr 50}+--------------- ${memperc} % || ${mem } / ${memmax }${image /home/andry/.conky/devils/image/ram1.png -p 280,130 -s 25x25}
+${goto 12}|${voffset 60}${alignr 170}+--------- ${totaldown wlan0}${image /home/andry/.conky/devils/image/dwn1.png -p 160,201 -s 25x25}
+${goto 12}|${voffset -14}${alignr 50}${totalup wlan0}${image /home/andry/.conky/devils/image/up1.png -p 280,200 -s 25x25}
+
+${goto 12}+-------------------------------------------------------------------------
